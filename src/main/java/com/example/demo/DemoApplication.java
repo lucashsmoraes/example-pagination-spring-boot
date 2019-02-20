@@ -22,18 +22,18 @@ public class DemoApplication implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {
 
-        ItemMenu itemMenu = new ItemMenu("NomeMenu", "PR", 'S');
-        ItemMenu itemMenu1 = new ItemMenu("NomeMenu_1", "PU", 'N');
-        ItemMenu itemMenu2 = new ItemMenu("NomeMenu_2", "PR", 'S');
-        ItemMenu itemMenu3 = new ItemMenu("NomeMenu_3", "PR", 'S');
-        ItemMenu itemMenu4 = new ItemMenu("NomeMenu_4", "PU", 'N');
-        ItemMenu itemMenu5 = new ItemMenu("NomeMenu_5", "PR", 'S');
-        ItemMenu itemMenu6 = new ItemMenu("NomeMenu_6", "PR", 'S');
-        ItemMenu itemMenu7 = new ItemMenu("NomeMenu_7", "PU", 'N');
-        ItemMenu itemMenu8 = new ItemMenu("NomeMenu_8", "PR", 'S');
-        ItemMenu itemMenu9 = new ItemMenu("NomeMenu_9", "PU", 'N');
-        ItemMenu itemMenu10 = new ItemMenu("NomeMenu_10", "PU", 'N');
-        ItemMenu itemMenu11 = new ItemMenu("NomeMenu_11", "PR", 'S');
+        ItemMenu itemMenu = new ItemMenu("NomeMenu", "PR", "S");
+        ItemMenu itemMenu1 = new ItemMenu("NomeMenu_1", "PU", "S");
+        ItemMenu itemMenu2 = new ItemMenu("NomeMenu_2", "PR", "S");
+        ItemMenu itemMenu3 = new ItemMenu("NomeMenu_3", "PR", "S");
+        ItemMenu itemMenu4 = new ItemMenu("NomeMenu_4", "PU", "S");
+        ItemMenu itemMenu5 = new ItemMenu("NomeMenu_5", "PR", "S");
+        ItemMenu itemMenu6 = new ItemMenu("NomeMenu_6", "PR", "S");
+        ItemMenu itemMenu7 = new ItemMenu("NomeMenu_7", "PU", "N");
+        ItemMenu itemMenu8 = new ItemMenu("NomeMenu_8", "PR", "N");
+        ItemMenu itemMenu9 = new ItemMenu("NomeMenu_9", "PU", "N");
+        ItemMenu itemMenu10 = new ItemMenu("NomeMenu_10", "PU", "N");
+        ItemMenu itemMenu11 = new ItemMenu("NomeMenu_11", "PR", "N");
 
         itemMenuRepository.save(Arrays.asList(
                 itemMenu, itemMenu1, itemMenu3,

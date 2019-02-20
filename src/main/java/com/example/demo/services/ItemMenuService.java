@@ -22,4 +22,10 @@ public class ItemMenuService {
     public Page<ItemMenu> getPagination(Pageable pageable) {
         return itemMenuRepository.findAll(pageable);
     }
+
+
+    // filtrando por Nome or flPublica ou TpAcesso
+    public Page<ItemMenu> getPaginationFilter(String nameMenu, String flPublica, String tpAcesso, Pageable pageable) {
+        return itemMenuRepository.findAllByNameMenuOrFlPublicaOrTpAcessoIgnoreCaseContaining(nameMenu, flPublica, tpAcesso, pageable);
+    }
 }

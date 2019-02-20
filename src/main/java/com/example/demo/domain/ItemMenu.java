@@ -14,12 +14,12 @@ public class ItemMenu {
     private Integer idMenu;
     private String nameMenu;
     private String flPublica;
-    private char tpAcesso;
+    private String tpAcesso;
 
     public ItemMenu() {
     }
 
-    public ItemMenu(String nameMenu, String flPublica, char tpAcesso) {
+    public ItemMenu(String nameMenu, String flPublica, String tpAcesso) {
         this.nameMenu = nameMenu;
         this.flPublica = flPublica;
         this.tpAcesso = tpAcesso;
@@ -49,11 +49,11 @@ public class ItemMenu {
         this.flPublica = flPublica;
     }
 
-    public char getTpAcesso() {
+    public String getTpAcesso() {
         return tpAcesso;
     }
 
-    public void setTpAcesso(char tpAcesso) {
+    public void setTpAcesso(String tpAcesso) {
         this.tpAcesso = tpAcesso;
     }
 
