@@ -15,14 +15,18 @@ public class ItemMenu {
     private String nameMenu;
     private String flPublica;
     private String tpAcesso;
+    private Integer cdIcone;
+    private Integer cdPosicao;
 
     public ItemMenu() {
     }
 
-    public ItemMenu(String nameMenu, String flPublica, String tpAcesso) {
+    public ItemMenu(String nameMenu, String flPublica, String tpAcesso, Integer cdIcone, Integer cdPosicao) {
         this.nameMenu = nameMenu;
         this.flPublica = flPublica;
         this.tpAcesso = tpAcesso;
+        this.cdIcone = cdIcone;
+        this.cdPosicao = cdPosicao;
     }
 
     public Integer getIdMenu() {
@@ -55,6 +59,22 @@ public class ItemMenu {
 
     public void setTpAcesso(String tpAcesso) {
         this.tpAcesso = tpAcesso;
+    }
+
+    public Integer getCdIcone() {
+        return cdIcone;
+    }
+
+    public void setCdIcone(Integer cdIcone) {
+        this.cdIcone = cdIcone;
+    }
+
+    public Integer getCdPosicao() {
+        return cdPosicao;
+    }
+
+    public void setCdPosicao(Integer cdPosicao) {
+        this.cdPosicao = cdPosicao;
     }
 
     @Override

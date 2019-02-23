@@ -5,7 +5,7 @@ public class ItemMenuDTO {
     private Integer idMenu;
     private String nameMenu;
     private String flPublica;
-    private String tpAcesso;
+    private char tpAcesso;
 
     public Integer getIdMenu() {
         return idMenu;
@@ -31,11 +31,11 @@ public class ItemMenuDTO {
         this.flPublica = flPublica;
     }
 
-    public String getTpAcesso() {
+    public char getTpAcesso() {
         return tpAcesso;
     }
 
-    public void setTpAcesso(String tpAcesso) {
+    public void setTpAcesso(char tpAcesso) {
         this.tpAcesso = tpAcesso;
     }
 

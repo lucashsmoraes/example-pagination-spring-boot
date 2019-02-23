@@ -28,4 +28,14 @@ public class ItemMenuService {
     public Page<ItemMenu> getPaginationFilter(String nameMenu, String flPublica, String tpAcesso, Pageable pageable) {
         return itemMenuRepository.findAllByNameMenuOrFlPublicaOrTpAcessoIgnoreCaseContaining(nameMenu, flPublica, tpAcesso, pageable);
     }
+
+    // Nome estiver vazi
+    public Page<ItemMenu> findByNameMenu(String name, Pageable pageable) {
+
+        if (name.equals("")) {
+            return itemMenuRepository.findAll(pageable);
+        }else {
+            return itemMenuRepository.findByNameMenu(name, pageable);
+        }
+    }
 }
